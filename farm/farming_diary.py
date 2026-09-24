@@ -5,46 +5,63 @@ and checked for ripeness.
 """
 
 from farm.corn import Corn
+from farm.rice import Rice
+
 
 
 print('\n\n Day One: Corn')
 
-# 1. Instantiate a corn crop
+# 1.1 Instantiate a corn crop
 corn = Corn()
 
-# 2. Water the corn crop
+# 1.2 Water the corn crop
 corn.water()
 
-# 3. Print "The corn crop produced ## grains"
-print("The corn crop produced {} grains".format(corn.grains))
+# 1.3 Print "The corn crop produced ## grains"
+print(f"The corn crop produced {corn.grains} grains")
 
-# 4. Print "The corn crop is ripe" or "The corn crop is not ripe"
-print("The corn crop is {}ripe".format("" if corn.ripe() else "not "))
 
+# 1.4 Print "The corn crop is ripe" or "The corn crop is not ripe"
+print(f"The corn crop is {'' if corn.ripe() else 'not '}ripe")
+
+
+print('\n\n 📄 Day Two: Rice')
 # 2. Water the corn crop
-pass  # YOUR CODE HERE
+
+# 2.1 Instantiate a rice crop
+rice = Rice()
+
+# 2.2 Water the rice crop
+rice.water()
+
+# 2.3 Transplant the rice crop
+rice.transplant()
+
+# 2.4 Print "The rice crop produced ## grains"
+print(f"The rice crop produced {rice.grains} grains")
+
+# 2.5 Print "The rice crop is ripe" or "The rice crop is not ripe"
+print(f"The rice crop is {'' if rice.ripe() else 'not '}ripe")
 
 
 
 # 3. Print "The corn crop produced ## grains"
-pass  # YOUR CODE HERE
+
 
 # 4. Print "The corn crop is ripe" or "The corn crop is not ripe"
-pass  # YOUR CODE HERE
 
 print("\n\n📝 Day Two: Rice")
 
 # 1. Instantiate a rice crop
-pass  # YOUR CODE HERE
+
 
 # 2. Water the rice crop
-pass  # YOUR CODE HERE
+
 
 # 3. Transplant the rice crop
-pass  # YOUR CODE HERE
+
 
 # 4. Print "The rice crop produced ## grains"
-pass  # YOUR CODE HERE
+
 
 # 5. Print "The rice crop is ripe" or "The rice crop is not ripe"
-pass  # YOUR CODE HERE
