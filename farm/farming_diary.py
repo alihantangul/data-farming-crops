@@ -7,13 +7,24 @@ and checked for ripeness.
 from farm.corn import Corn
 
 
-print("\n\n📝 Day One: Corn")
+print('\n\n Day One: Corn')
 
 # 1. Instantiate a corn crop
-pass  # YOUR CODE HERE
+corn = Corn()
+
+# 2. Water the corn crop
+corn.water()
+
+# 3. Print "The corn crop produced ## grains"
+print("The corn crop produced {} grains".format(corn.grains))
+
+# 4. Print "The corn crop is ripe" or "The corn crop is not ripe"
+print("The corn crop is {}ripe".format("" if corn.ripe() else "not "))
 
 # 2. Water the corn crop
 pass  # YOUR CODE HERE
+
+
 
 # 3. Print "The corn crop produced ## grains"
 pass  # YOUR CODE HERE
